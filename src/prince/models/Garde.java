@@ -6,4 +6,6 @@ public class Garde extends Personnage {
         super(name, pointDeVie);
     }
 
+    
+
 }

@@ -31,18 +31,9 @@ public class Personnage {
         this.pointDeVieMax = pointDeVie;
     }
 
-    public void blessure() {
-        this.setPointDeVie(this.pointDeVie - 1);
-    }
-
-    public String attaque(Personnage personnage) {
-        personnage.setPointDeVie(personnage.pointDeVie - 2);
-        return this.name + " vous avez attaqué " + personnage.name;
-    }
-
-    public String potion() {
-        this.setPointDeVie(this.pointDeVieMax);
-        return "Vous avez récupéré la totalité de vos vies.";
+    public String coupDePoing(Personnage autrePersonnage) {
+        autrePersonnage.setPointDeVie(autrePersonnage.getPointDeVie() - 2);
+        return "Le personnage " + autrePersonnage.getName() + " a perdu 5 points de vie";
     }
 
     @Override

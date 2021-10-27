@@ -18,11 +18,6 @@ public class Prince extends Personnage {
         return "Le prince " + this.getName() + " a pris " + epee;
     }
 
-    public String coupDePoing(Garde garde) {
-        garde.setPointDeVie(garde.getPointDeVie() - 5);
-        return "Le garde " + garde.getName() + " a perdu 5 points de vie";
-    }
-
     public String coupDEpee(Garde garde, Epee epee) {
         if (this.monEpee != null) {
             garde.setPointDeVie(garde.getPointDeVie() - epee.getDegats());
