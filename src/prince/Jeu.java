@@ -13,13 +13,9 @@ public class Jeu {
         Garde garde = new Garde("Garcia", 10);
         Epee epee = new Epee();
 
-        System.out.println(garde);
-        prince.coupDePoing(garde);
-        System.out.println(garde);
-
-        System.out.println(prince);
-        garde.coupDePoing(prince);
-        System.out.println(prince);
+        prince.prendreEpee(epee);
+        System.out.println(prince.coupDEpee(garde));
+        
 
     }
 }
