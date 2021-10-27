@@ -1,13 +1,17 @@
 package prince.models;
 
 public class Personnage {
-    private String name;
-    private int pointDeVieMax;
-    private int pointDeVie;
 
-    public int getPointDeVie() {
-        return pointDeVie;
-    }
+    private String name;
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    private int pointDeVieMax;
+
+    protected int pointDeVie;
+
+    public int getPointDeVie() { return pointDeVie; }
 
     public void setPointDeVie(int nouveauPv) {
         if (nouveauPv >= 0 && nouveauPv <= pointDeVieMax) {
@@ -17,7 +21,7 @@ public class Personnage {
 
     public Personnage() {
         this.name = "User";
-        this.pointDeVie = 3;
+        this.pointDeVie = 5;
         this.pointDeVieMax = this.pointDeVie;
     }
 
@@ -28,24 +32,21 @@ public class Personnage {
     }
 
     public void blessure() {
-        // this.pointDeVie = this.pointDeVie - 1;
         this.setPointDeVie(this.pointDeVie - 1);
     }
 
     public String attaque(Personnage personnage) {
-        // personnage.pointDeVie = personnage.pointDeVie - 2;
         personnage.setPointDeVie(personnage.pointDeVie - 2);
         return this.name + " vous avez attaqué " + personnage.name;
     }
 
     public String potion() {
-        // this.pointDeVie = this.pointDeVieMax;
         this.setPointDeVie(this.pointDeVieMax);
         return "Vous avez récupéré la totalité de vos vies.";
     }
 
     @Override
     public String toString() {
-        return "Je suis un personnage avec " + pointDeVie + " points de vie";
+        return "Je suis " + this.name + " avec " + this.pointDeVie + " points de vie";
     }
 }

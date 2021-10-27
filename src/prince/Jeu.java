@@ -1,25 +1,24 @@
 package prince;
 
-import prince.models.Personnage;
+import prince.models.Fiole;
+import prince.models.Garde;
+import prince.models.Prince;
 
 public class Jeu {
     public static void main(String[] args) {
-        Personnage p1, p2; // Déclaration
-        p1 = new Personnage("User1", 10); // Instanciation
-        p2 = new Personnage("User2", 3);
-        System.out.println(p1);
-        System.out.println(p2);
-        for (int i = 0; i < 10; i++) {
-            // System.out.println(new Personnage(i).toString());
-        }
 
-        p1.blessure();
-        System.out.println(p1);
+        Prince prince = new Prince("Martin", 10);
+        Fiole fiole1 = new Fiole(1);
+        Garde garde = new Garde("Garcia", 10);
 
-        System.out.println(p1.attaque(p2));
-        System.out.println(p2);
+        System.out.println(prince);
+        prince.blessure();
+        System.out.println(prince);
+        prince.prendre(fiole1);
+        System.out.println(prince);
 
-        p1.setPointDeVie(-2);
-        System.out.println(p1);
+        System.out.println(garde);
+        System.out.println(prince.coupDePoing(garde));
+        System.out.println(garde);
     }
 }

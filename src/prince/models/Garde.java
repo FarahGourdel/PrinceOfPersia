@@ -2,7 +2,8 @@ package prince.models;
 
 public class Garde extends Personnage {
 
-    public Garde() {
-        super();
+    public Garde(String name, int pointDeVie) {
+        super(name, pointDeVie);
     }
+
 }
