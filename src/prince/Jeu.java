@@ -20,5 +20,6 @@ public class Jeu {
         System.out.println(prince);
         garde.coupDePoing(prince);
         System.out.println(prince);
+        
     }
 }
