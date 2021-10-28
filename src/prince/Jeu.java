@@ -14,7 +14,7 @@ public class Jeu {
         Epee epee = new Epee();
 
         System.out.println(garde);
-        prince.coupDePoing(garde);
+        System.out.println(prince.coupDePoing(garde));
         System.out.println(garde);
     }
 }
