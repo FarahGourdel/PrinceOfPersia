@@ -35,7 +35,7 @@ public class Personnage {
     // Une méthode de la classe
     public String coupDePoing(Personnage autrePersonnage) {
         autrePersonnage.setPointDeVie(autrePersonnage.getPointDeVie() - 2);
-        return "Le personnage " + autrePersonnage.getName() + " a perdu 5 points de vie";
+        return "Le personnage " + autrePersonnage.getName() + " a perdu 2 points de vie";
     }
 
     // Une méthode surdéfinie (méthode hérité de la classe de base: la classe Object)
