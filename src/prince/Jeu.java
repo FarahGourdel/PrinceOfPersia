@@ -17,9 +17,5 @@ public class Jeu {
         prince.coupDePoing(garde);
         System.out.println(garde);
 
-        System.out.println(prince);
-        garde.coupDePoing(prince);
-        System.out.println(prince);
-        
     }
 }
