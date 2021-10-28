@@ -16,6 +16,4 @@ public class Fiole extends Element {
     public Fiole(int pointDeVie) {
         this.pointDeVie = pointDeVie;
     }
-
-
 }

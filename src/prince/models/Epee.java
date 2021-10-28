@@ -8,7 +8,6 @@ public class Epee extends Element {
     public void setDegats(int degats) { this.degats = degats; }
 
     public Epee() {
-        super();
         this.setDegats(5);
     }
 
